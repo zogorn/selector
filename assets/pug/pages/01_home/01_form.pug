@@ -1,43 +1,43 @@
 section.post-form.text-center
 	h2 post a job
+
 	form
-		
+
 		.form-group.form-control-lg
 			label(for='upload-video') 
-			input(type='file' aria-describedby='fileHelp').form-control-file#upload-video
-			small#fileHelp.form-text.text-muted This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.
+			input(type='file').form-control-file#upload-video
 
 
-		.form-group.form-control-lg.source-lang
-			label(for='source-lang') source language
-				select.form-control#source-lang
-					option.selected select source language
-					option(value='1') some words here
-					option(value='2') other words here
-					option(value='3') words words
-					option(value='4') words words
-					option(value='5') words words
-					option(value='6') words words
+		.form-group.form-control-lg.row
+			.source-lang.col-md-6
+				label(for='source-lang') source language
+					select.form-control#source-lang
+						option.selected select source language
+						option(value='1') some words here
+						option(value='2') other words here
+						option(value='3') words words
+						option(value='4') words words
+						option(value='5') words words
+						option(value='6') words words
 
-		.form-group.form-control-lg.target-lang
-			label(for='target-lang') target language
-				select.form-control#target-lang
-					option.selected select target language
-					option(value='1') some words here
-					option(value='2') other words here
-					option(value='3') words words
-					option(value='4') words words
-					option(value='5') words words
-					option(value='6') words words
-		.container
-			.form-group.row.time-translated
-				label(for='time-translated').col-2.col-form-label time to be translated
-				.col-4
+			.target-lang.col-md-6
+				label(for='target-lang') target language
+					select.form-control#target-lang
+						option.selected select target language
+						option(value='1') some words here
+						option(value='2') other words here
+						option(value='3') words words
+						option(value='4') words words
+						option(value='5') words words
+						option(value='6') words words
+
+		.form-group.form-control-lg.row
+			.time-translated.col-md-6
+					label(for='time-translated') time to be translated
 					input(type='number' value='42').form-control#time-translated
 
-			.form-group.row.time-translated
-				label(for='time-translated').col-2.col-form-label time to be translated
-				.col-4
-					input(type='number' value='42').form-control#time-translated
+			.page-number.col-md-6
+					label(for='page-number') number of pages
+					input(type='number' value='2').form-control#page-number
 
-		button(type='submit').btn.btn-primary.btn-lg post
+		button(type='submit').btn.btn-primary.btn-lg Post
