@@ -20,52 +20,13 @@
     <!-- start header-->
     <header class="siteHeader"></header>
     <!-- end header-->
-    <section class="post-form text-center">
+    <section class="post-job">
       <h2>post a job</h2>
-      <form>
-        <div class="form-group form-control-lg">
-          <label for="upload-video"> </label>
-          <input class="form-control-file" type="file" id="upload-video">
+      <form class="post-job-form">
+        <div class="upload">
+          <label class="btn" for="upload-video">upload your video</label>
+          <input type="file" id="upload-video">
         </div>
-        <div class="form-group form-control-lg row">
-          <div class="source-lang col-md-6">
-            <label for="source-lang">source language
-              <select class="form-control" id="source-lang">
-                <option class="selected">select source language</option>
-                <option value="1">some words here</option>
-                <option value="2">other words here</option>
-                <option value="3">words words</option>
-                <option value="4">words words</option>
-                <option value="5">words words</option>
-                <option value="6">words words</option>
-              </select>
-            </label>
-          </div>
-          <div class="target-lang col-md-6">
-            <label for="target-lang">target language
-              <select class="form-control" id="target-lang">
-                <option class="selected">select target language</option>
-                <option value="1">some words here</option>
-                <option value="2">other words here</option>
-                <option value="3">words words</option>
-                <option value="4">words words</option>
-                <option value="5">words words</option>
-                <option value="6">words words</option>
-              </select>
-            </label>
-          </div>
-        </div>
-        <div class="form-group form-control-lg row">
-          <div class="time-translated col-md-6">
-            <label for="time-translated">time to be translated</label>
-            <input class="form-control" type="number" value="42" id="time-translated">
-          </div>
-          <div class="page-number col-md-6">
-            <label for="page-number">number of pages</label>
-            <input class="form-control" type="number" value="2" id="page-number">
-          </div>
-        </div>
-        <button class="btn btn-primary btn-lg" type="submit">Post</button>
       </form>
     </section>
     <!-- start footer-->
