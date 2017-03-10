@@ -1,6 +1,22 @@
 $main-color: #F8FCEB
 $form-bg: #495664
 $phone-max: 736px
+%input
+	background-color: $main-color
+	cursor: pointer
+	padding: 15px
+	border-radius: 0 10px 10px 0
+	border-left: 5px solid transparent
+	color: $form-bg
+	max-width: 35%
+	width: 35%
+	transition: all 0.7s ease-in-out
+%hover
+	border-left: 5px solid red
+	padding-left: 20px
+	@media(min-width: $phone-max)
+		padding-left: 40px
+		border-radius: 0 50px 50px 0
 
 .post-job
 	background-color: $form-bg
@@ -9,28 +25,32 @@ $phone-max: 736px
 	margin: 80px auto
 	padding: 30px 0
 	text-transform: capitalize
-
 	h2
 		text-align: center
 
 	.upload
 		.upload-btn
-			background-color: $main-color
-			cursor: pointer
-			padding: 15px
-			border-radius: 0 10px 10px 0
-			border-left: 5px solid transparent
-			color: $form-bg
-			text-align: left
-			max-width: 35%
-			width: 35%
-			transition: all 0.7s ease-in-out
+			@extend %input
 			&:hover
-				border-left: 5px solid red
-				padding-left: 20px
-				@media(min-width: $phone-max)
-					padding-left: 40px
-					border-radius: 0 50px 50px 0
+				@extend  %hover
 
 		#upload-video
 			visibility: hidden
+
+	.lang-parent
+		.source-lang
+			#source-lang
+				width: 50%
+				display: block
+				outline: none
+				@extend %input
+				&:hover
+					@extend %hover
+
+		.target-lang
+			#target-lang
+				display: block
+				outline: none
+				@extend %input
+				&:hover
+					@extend %hover

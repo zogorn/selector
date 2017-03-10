@@ -22,11 +22,42 @@
     <!-- end header-->
     <section class="post-job">
       <h2>post a job</h2>
-      <form class="post-job-form">
+      <form class="post-job-form" method="post" action="">
         <div class="upload">
           <label class="upload-btn" for="upload-video">upload your video</label>
           <input type="file" id="upload-video">
         </div>
+        <div class="lang-parent">
+          <div class="source-lang">
+            <label for="source-lang">for source language</label>
+            <select name="lang-source" id="source-lang">
+              <option value="lang 1">lang 1</option>
+              <option value="lang 2">lang 2</option>
+              <option value="lang 3">lang 3</option>
+              <option value="lang 4">lang 4</option>
+            </select>
+          </div>
+          <div class="target-lang">
+            <label for="target-lang">for target language</label>
+            <select name="lang-target" id="target-lang">
+              <option value="lang 1">lang 1</option>
+              <option value="lang 2">lang 2</option>
+              <option value="lang 3">lang 3</option>
+              <option value="lang 4">lang 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="page-time">
+          <div class="time-trans">
+            <label for="time-trans">time to be translated</label>
+            <input name="translated-time" type="number" min="1" max="" step="" value="" placeholder="time in min">
+          </div>
+          <div class="page-trans">
+            <label for="page-trans">page to be translated</label>
+            <input name="translated-page" type="number" min="1" max="" step="" value="" placeholder="page numbers">
+          </div>
+        </div>
+        <input name="submit" type="submit" value="Post">
       </form>
     </section>
     <!-- start footer-->

@@ -1,8 +1,35 @@
 section.post-job
 	h2 post a job
 
-	form.post-job-form
+	form(method='post' action='').post-job-form
 
 		.upload
 			label(for='upload-video' class='upload-btn') upload your video
 			input(type='file')#upload-video
+
+		.lang-parent
+			.source-lang
+				label(for='source-lang') for source language
+				select(name='lang-source')#source-lang
+					option(value='lang 1') lang 1
+					option(value='lang 2') lang 2
+					option(value='lang 3') lang 3
+					option(value='lang 4') lang 4
+
+			.target-lang
+				label(for='target-lang') for target language
+				select(name='lang-target')#target-lang
+					option(value='lang 1') lang 1
+					option(value='lang 2') lang 2
+					option(value='lang 3') lang 3
+					option(value='lang 4') lang 4
+
+		.page-time
+			.time-trans
+				label(for='time-trans') time to be translated
+				input(name='translated-time' type='number' min='1' max='' step='' value='' placeholder='time in min')
+			.page-trans
+				label(for='page-trans') page to be translated
+				input(name='translated-page' type='number' min='1' max='' step='' value='' placeholder='page numbers')
+
+		input(name='submit' type='submit' value='Post')
