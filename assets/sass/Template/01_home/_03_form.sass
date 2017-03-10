@@ -1,14 +1,30 @@
-$main-color: #000
+$main-color: #F8FCEB
+$form-bg: #495664
 
 .post-job
-	background-color: #495664
-	color: #F8FCEB
+	background-color: $form-bg
+	color: $main-color
 	max-width: 800px
 	margin: 80px auto
-	padding: 30px 10px
+	padding: 30px 0
 	text-transform: capitalize
-	text-align: center
 
-.btn
-	background-color: $main-color
-	cursor: pointer
+	h2
+		text-align: center
+
+	.upload
+		.upload-btn
+			background-color: $main-color
+			cursor: pointer
+			padding: 15px
+			border-radius: 0 10px 10px 0
+			color: $form-bg
+			text-align: left
+			max-width: 35%
+			width: 35%
+			transition: all 0.7s ease-in-out
+			&:hover
+				padding-left: 40px
+
+		#upload-video
+			visibility: hidden
