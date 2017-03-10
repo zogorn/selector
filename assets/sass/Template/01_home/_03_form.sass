@@ -1,5 +1,6 @@
 $main-color: #F8FCEB
 $form-bg: #495664
+$phone-max: 736px
 
 .post-job
 	background-color: $form-bg
@@ -25,9 +26,11 @@ $form-bg: #495664
 			width: 35%
 			transition: all 0.7s ease-in-out
 			&:hover
-				border-radius: 0 50px 50px 0
 				border-left: 5px solid red
-				padding-left: 40px
+				padding-left: 20px
+				@media(min-width: $phone-max)
+					padding-left: 40px
+					border-radius: 0 50px 50px 0
 
 		#upload-video
 			visibility: hidden
