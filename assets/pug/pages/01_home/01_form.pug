@@ -4,13 +4,14 @@ section.post-job
 	form(method='post' action='').post-job-form
 
 		.upload
-			label(for='upload-video' class='upload-btn') upload your video
+			label(for='upload-video' class='upload-btn') click to upload your video
 			input(type='file')#upload-video
 
 		.lang-parent
 			.source-lang
 				label(for='source-lang') for source language
 				select(name='lang-source')#source-lang
+					option(selected disabled hidden) Select SRC Language
 					option(value='lang 1') lang 1
 					option(value='lang 2') lang 2
 					option(value='lang 3') lang 3
@@ -19,6 +20,7 @@ section.post-job
 			.target-lang
 				label(for='target-lang') for target language
 				select(name='lang-target')#target-lang
+					option(selected disabled hidden) Select Target Language
 					option(value='lang 1') lang 1
 					option(value='lang 2') lang 2
 					option(value='lang 3') lang 3
@@ -27,9 +29,9 @@ section.post-job
 		.page-time
 			.time-trans
 				label(for='time-trans') time to be translated
-				input(name='translated-time' type='number' min='1' max='' step='' value='' placeholder='time in min')
+				input(name='translated-time' type='number' min='1' max='' step='' value='' placeholder='Time in Min')
 			.page-trans
-				label(for='page-trans') page to be translated
-				input(name='translated-page' type='number' min='1' max='' step='' value='' placeholder='page numbers')
+				label(for='page-trans') page number
+				input(name='translated-page' type='number' min='1' max='' step='' value='' placeholder='Page Numbers')
 
 		input(name='submit' type='submit' value='Post')
