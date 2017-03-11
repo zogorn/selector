@@ -12,7 +12,7 @@ $phone-max: 736px
 	border-radius: 0 10px 10px 0
 	border-left: 5px solid transparent
 	color: $form-bg
-	max-width: 35%
+	max-width: 50%
 	width: 35%
 	appearance: none
 	display: block
@@ -25,6 +25,7 @@ $phone-max: 736px
 	@media(min-width: $phone-max)
 		padding-left: 40px
 		border-radius: 0 50px 50px 0
+		width: 45%
 			
 
 .post-job
@@ -66,3 +67,12 @@ $phone-max: 736px
 			@extend %input-left
 			&:hover, &:active, &:focus
 				@extend %hover-left
+
+	.post-btn
+		margin-top: 20px
+		@extend %input-left
+		&:hover
+			@extend %hover-left
+			@media(min-width: $phone-max)
+				max-width: 100%
+				width: 60%
