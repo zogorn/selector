@@ -1,5 +1,6 @@
 $main-color: #F8FCEB
 $form-bg: #495664
+// $form-bg: $brand-inverse
 $phone-max: 736px
 %input
 	background-color: $main-color
@@ -10,6 +11,7 @@ $phone-max: 736px
 	color: $form-bg
 	max-width: 35%
 	width: 35%
+	appearance: none
 	transition: all 0.7s ease-in-out
 %hover
 	border-left: 5px solid red
@@ -52,5 +54,5 @@ $phone-max: 736px
 				display: block
 				outline: none
 				@extend %input
-				&:hover
+				&:hover, &:active
 					@extend %hover
