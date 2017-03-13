@@ -17,15 +17,17 @@ $phone-max: 736px
 	outline: none
 	transition: all 0.7s ease-in-out
 	border-radius: 0 10px 10px 0
+	@media(max-width: $phone-max)
+		width: 90%
 
 %hover-left
 	border-left: 5px solid $border-color
-	padding-left: 20px
 	color: $border-color
-	@media(min-width: $phone-max)
-		padding-left: 50px
-		border-radius: 0 50px 50px 0
-		width: 100%
+	padding-left: 50px
+	border-radius: 0 50px 50px 0
+	width: 100%
+	@media(max-width: $phone-max)
+		padding-right: 30px
 
 %input-right
 	background-color: $main-color
@@ -40,15 +42,17 @@ $phone-max: 736px
 	outline: none
 	transition: all 0.7s ease-in-out
 	border-radius: 10px 0 0 10px
+	@media(max-width: $phone-max)
+		width: 90%
 
 %hover-right
 	border-right: 5px solid $border-color
-	padding-right: 20px
 	color: $border-color
-	@media(min-width: $phone-max)
-		padding-right: 50px
-		border-radius: 50px 0 0 50px
-		width: 100%
+	padding-right: 50px
+	border-radius: 50px 0 0 50px
+	width: 100%
+	@media(max-width: $phone-max)
+		padding-right: 30px
 
 
 label
@@ -70,8 +74,12 @@ label
 			@extend %input-left
 			&:hover, &:active
 				@extend %hover-left
-				max-width: 70%
-				width: 70%
+				@media(max-width: $phone-max)
+					border-radius: 0 !important
+					border-right: 5px solid $border-color
+				@media(min-width: $phone-max)
+					max-width: 70%
+					width: 70%
 
 		#upload-video
 			visibility: hidden
