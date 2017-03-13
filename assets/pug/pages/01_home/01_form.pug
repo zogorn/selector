@@ -7,31 +7,32 @@ section.post-job
 			label(for='upload-video' class='upload-btn') click to upload your video
 			input(type='file')#upload-video
 
-		.lang-parent
-			.source-lang
-				label(for='source-lang') for source language
-				select(name='lang-source')#source-lang
-					option(selected disabled hidden) Select SRC Language
-					option(value='lang 1') lang 1
-					option(value='lang 2') lang 2
-					option(value='lang 3') lang 3
-					option(value='lang 4') lang 4
+		.grid
+			.page-time
+				.time-trans
+					label(for='time-trans') time to be translated
+					input(name='translated-time' type='number' min='1' max='' step='' value='' placeholder='Time in Min')
+				.page-trans
+					label(for='page-trans') page number
+					input(name='translated-page' type='number' min='1' max='' step='' value='' placeholder='Page Numbers')
+						
+			.lang-parent
+				.source-lang
+					label(for='source-lang') for source language
+					select(name='lang-source')#source-lang
+						option(selected disabled hidden) Select SRC Language
+						option(value='lang 1') lang 1
+						option(value='lang 2') lang 2
+						option(value='lang 3') lang 3
+						option(value='lang 4') lang 4
 
-			.target-lang
-				label(for='target-lang') for target language
-				select(name='lang-target')#target-lang
-					option(selected disabled hidden) Select Target Language
-					option(value='lang 1') lang 1
-					option(value='lang 2') lang 2
-					option(value='lang 3') lang 3
-					option(value='lang 4') lang 4
-
-		.page-time
-			.time-trans
-				label(for='time-trans') time to be translated
-				input(name='translated-time' type='number' min='1' max='' step='' value='' placeholder='Time in Min')
-			.page-trans
-				label(for='page-trans') page number
-				input(name='translated-page' type='number' min='1' max='' step='' value='' placeholder='Page Numbers')
+				.target-lang
+					label(for='target-lang') for target language
+					select(name='lang-target')#target-lang
+						option(selected disabled hidden) Select Target Language
+						option(value='lang 1') lang 1
+						option(value='lang 2') lang 2
+						option(value='lang 3') lang 3
+						option(value='lang 4') lang 4
 
 		input(name='submit' type='submit' value='Post').post-btn

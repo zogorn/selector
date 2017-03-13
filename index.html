@@ -27,36 +27,38 @@
           <label class="upload-btn" for="upload-video">click to upload your video</label>
           <input type="file" id="upload-video">
         </div>
-        <div class="lang-parent">
-          <div class="source-lang">
-            <label for="source-lang">for source language</label>
-            <select name="lang-source" id="source-lang">
-              <option selected disabled hidden>Select SRC Language</option>
-              <option value="lang 1">lang 1</option>
-              <option value="lang 2">lang 2</option>
-              <option value="lang 3">lang 3</option>
-              <option value="lang 4">lang 4</option>
-            </select>
+        <div class="grid">
+          <div class="page-time">
+            <div class="time-trans">
+              <label for="time-trans">time to be translated</label>
+              <input name="translated-time" type="number" min="1" max="" step="" value="" placeholder="Time in Min">
+            </div>
+            <div class="page-trans">
+              <label for="page-trans">page number</label>
+              <input name="translated-page" type="number" min="1" max="" step="" value="" placeholder="Page Numbers">
+            </div>
           </div>
-          <div class="target-lang">
-            <label for="target-lang">for target language</label>
-            <select name="lang-target" id="target-lang">
-              <option selected disabled hidden>Select Target Language</option>
-              <option value="lang 1">lang 1</option>
-              <option value="lang 2">lang 2</option>
-              <option value="lang 3">lang 3</option>
-              <option value="lang 4">lang 4</option>
-            </select>
-          </div>
-        </div>
-        <div class="page-time">
-          <div class="time-trans">
-            <label for="time-trans">time to be translated</label>
-            <input name="translated-time" type="number" min="1" max="" step="" value="" placeholder="Time in Min">
-          </div>
-          <div class="page-trans">
-            <label for="page-trans">page number</label>
-            <input name="translated-page" type="number" min="1" max="" step="" value="" placeholder="Page Numbers">
+          <div class="lang-parent">
+            <div class="source-lang">
+              <label for="source-lang">for source language</label>
+              <select name="lang-source" id="source-lang">
+                <option selected disabled hidden>Select SRC Language</option>
+                <option value="lang 1">lang 1</option>
+                <option value="lang 2">lang 2</option>
+                <option value="lang 3">lang 3</option>
+                <option value="lang 4">lang 4</option>
+              </select>
+            </div>
+            <div class="target-lang">
+              <label for="target-lang">for target language</label>
+              <select name="lang-target" id="target-lang">
+                <option selected disabled hidden>Select Target Language</option>
+                <option value="lang 1">lang 1</option>
+                <option value="lang 2">lang 2</option>
+                <option value="lang 3">lang 3</option>
+                <option value="lang 4">lang 4</option>
+              </select>
+            </div>
           </div>
         </div>
         <input class="post-btn" name="submit" type="submit" value="Post">
